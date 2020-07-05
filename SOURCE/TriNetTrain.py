@@ -42,7 +42,8 @@ trainsetCT__ = dataset.CT_Triplet(root_dir=ROOT_DIR__,
 valsetCT__ = dataset.CT_Triplet(root_dir=ROOT_DIR__,
                      split_covid=val_COVID__,
                      split_nonCovid=val_NonCOVID__,
-                     transform= val_transformer)
+                     transform= val_transformer,
+                    train=False)
 
 train_loader = DataLoader(trainsetCT__, batch_size=BATCH_SIZE__, drop_last=False, shuffle=True)
 val_loader = DataLoader(valsetCT__, batch_size=BATCH_SIZE__, drop_last=False, shuffle=False)
