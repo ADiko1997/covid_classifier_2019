@@ -1,4 +1,4 @@
-COVID CLASSIFIER
+COVID CLASSIFIER - PyTorch implementation
 
 Three training pahses
 
